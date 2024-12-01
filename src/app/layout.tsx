@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-    title: "Project Management App",
+    title: "Layers | Landing Page",
 };
 
 export default function RootLayout({
