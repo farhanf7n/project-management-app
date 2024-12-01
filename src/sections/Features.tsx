@@ -100,12 +100,18 @@ export default function Features() {
                     <FeatureCard
                         title="Keyboard Quick Actions"
                         description="Powerful commands to help you create designs more quickly"
-                        className="md:col-span-2 lg:col-span-1 md:col-start-2 lg:col-start-auto"
+                        className="md:col-span-2 lg:col-span-1 md:col-start-2 lg:col-start-auto group"
                     >
-                        <div className="aspect-video flex items-center justify-center gap-2">
-                            <Key className="w-28">shift</Key>
-                            <Key>alt</Key>
-                            <Key>C</Key>
+                        <div className="aspect-video flex items-center justify-center gap-3">
+                            <Key className="w-28 outline  outline-2 outline-offset-4 outline-transparent group-hover:outline-lime-400 transition-all duration-500 group-hover:translate-y-1">
+                                shift
+                            </Key>
+                            <Key className="outline outline-2 outline-offset-4 outline-transparent group-hover:outline-lime-400 transition-all duration-500 group-hover:translate-y-1 delay-150">
+                                alt
+                            </Key>
+                            <Key className="outline outline-2 outline-offset-4 outline-transparent group-hover:outline-lime-400 transition-all duration-500 group-hover:translate-y-1 delay-300">
+                                C
+                            </Key>
                         </div>
                     </FeatureCard>
                 </div>
@@ -113,9 +119,9 @@ export default function Features() {
                     {features.map((feature) => (
                         <div
                             key={feature}
-                            className="bg-neutral-900 border border-white/10 inline-flex px-3 md:px-5 py-1.5 md:py-2 rounded-2xl gap-3 items-center text-xl"
+                            className="bg-neutral-900 border border-white/10 inline-flex px-3 md:px-5 py-1.5 md:py-2 rounded-2xl gap-3 items-center text-xl hover:scale-105 transition duration-500 group"
                         >
-                            <span className="bg-lime-400 text-neutral-500 size-5 rounded-full inline-flex items-center justify-center">
+                            <span className="bg-lime-400 text-neutral-500 size-5 rounded-full inline-flex items-center justify-center group-hover:rotate-45 transition duration-500">
                                 &#10038;
                             </span>
                             <span className="font-medium md:text-lg">
